@@ -1,0 +1,32 @@
+<button (click)="onClickNewGame()">{{ 'new_game' | i18n }}</button>
+<button (click)="onClickJoinGame()">{{ 'join_game' | i18n }}</button>
+
+<dialog #dialog>
+  <form method="dialog" (submit)="onSubmit($event)">
+    <ng-container *ngTemplateOutlet="dialogType === 'new' ? newGame : joinGame"></ng-container>
+    <button type="submit" (click)="onClickDialogConfirm()">{{ 'confirm' |i18n }}</button>
+    <button (click)="onClickDialogCancel()">{{ 'cancel' |i18n }}</button>
+  </form>
+</dialog>
+
+<ng-template #newGame>
+  <h2>{{ 'create_new_game' | i18n }}</h2>
+  <p>{{ 'create_new_game_desc' | i18n }}</p>
+  <div>
+    <input type="text" id="hostName" placeholder="{{ 'your_name' | i18n }}" required (invalid)="onInvalid($event)">
+  </div>
+  <div>
+    <input type="text" id="sessionPassword" placeholder="{{ 'session_password' | i18n }}" maxlength="8" required (invalid)="onInvalid($event)">
+  </div>
+  <div>
+    <label for="count">{{ 'player_count' | i18n }}: </label>
+    <input type="number" min="1" max="12" value="6" id="count" required (invalid)="onInvalid($event)">
+  </div>
+</ng-template>
+<ng-template #joinGame>
+  <h2>{{ 'join_game' | i18n }}</h2>
+  <p>{{ 'join_game_desc' | i18n }}</p>
+  <div>
+    <input type="text" id="session" placeholder="{{ 'session_number' | i18n }}" maxlength="4" (invalid)="onInvalid($event)">
+  </div>
+</ng-template>

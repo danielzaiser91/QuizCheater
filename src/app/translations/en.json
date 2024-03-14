@@ -1,0 +1,16 @@
+{
+    "status_connected": "connected",
+    "status_disconnected": "disconnected",
+    "status_connecting": "connecting...",
+    "new_game": "new Game",
+    "join_game": "join Game",
+    "join_game_desc": "Ask the host for the session number and password, then enter them here.",
+    "create_new_game": "create a new game",
+    "create_new_game_desc": "create a new quiz game. You are hosting. You are in charge. Invite players to your game, by sharing the session-number and session-password.",
+    "your_name": "your name",
+    "player_count": "playercount",
+    "confirm": "confirm",
+    "cancel": "cancel",
+    "session_number": "session-number",
+    "session_password": "session-password"
+}

@@ -1,0 +1,18 @@
+.status-icon {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid;
+  &.connecting {
+    background: yellow;
+    border-color: burlywood;
+  }
+  &.connected {
+    background: green;
+    border-color: aqua;
+  }
+  &.disconnected {
+    background: red;
+    border-color: coral;
+  }
+}

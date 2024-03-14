@@ -1,0 +1,16 @@
+{
+  "status_connected": "verbunden",
+  "status_disconnected": "unterbrochen",
+  "status_connecting": "verbindet...",
+  "new_game": "neues Spiel",
+  "join_game": "Spiel beitreten",
+  "join_game_desc": "Frage den Host nach der Sitzungs-Nummer und -Passwort und gebe sie dann hier ein.",
+  "create_new_game": "Neues Spiel erstellen",
+  "create_new_game_desc": "erstelle ein neues Quiz, du bist der Host. Du hast die Kontrolle. Lade Spieler zu deinem Spiel ein, indem du die Sitzungs-Nummer und das Sitzungs-Passwort teilst.",
+  "your_name": "Dein Name",
+  "player_count": "Anzahl Spieler",
+  "confirm": "Bestätigen",
+  "cancel": "Abbrechen",
+  "session_number": "Sitzungsnummer",
+  "session_password": "Sitzungs Passwort"
+}

@@ -1,0 +1,17 @@
+<div
+  [ngClass]="{
+    'status-icon': true,
+    connecting: wsService.isConnecting,
+    connected: !wsService.isConnecting && wsService.isConnected,
+    disconnected: !wsService.isConnecting && !wsService.isConnected
+  }"
+  matTooltipClass="tooltip-greeny"
+  matTooltip="{{
+    (wsService.isConnecting
+      ? 'status_connecting'
+      : wsService.isConnected
+      ? 'status_connected'
+      : 'status_disconnected'
+    ) | i18n
+  }}"
+></div>
